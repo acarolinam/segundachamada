@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <script>
+    document.getElementById("login-aluno").style.display='hidden';
+  </script>
+</head>
+
+<body>
+  <header class="header text-center">
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3 text-center">Sistema de Solicitação de Segunda Chamada</h1>
+        </div>
+    </div>
+  </header>
+  <nav class="">
+  </nav>
+  <section class="container-fluid">
+      <div class="row subTitulo">
+        <p class="lead text-center">Entre com seu login para acessar o sistema e realizar solicitações de segunda chamada</p>
+      </div>
+      <div class="row login">
+        <div class="col-lg-4 color text-center">
+           <button type="button" onclick="habilitarAluno()" class="btn btn-primary btn-lg">Aluno</button>
+           <form id="login-aluno">
+            <div class="form-group text-left">
+              <label for="login">Login:</label>
+              <input type="login" class="form-control" id="login" placeholder="Login">
+            </div>
+            <div class="form-group text-left">
+              <label for="senha">Senha:</label>
+              <input type="password" class="form-control" id="senha" placeholder="Senha">
+            </div>
+            <p class="text-center">
+              <a href="aluno/pagina-inicial-aluno.html" class="btn btn-primary btn-lg active" role="button">Entrar</a>
+            </p>
+          </form>
+        </div>
+
+        <div class="col-lg-4 text-center">
+           <button type="button" onclick="habilitarProfessor()" class="btn btn-primary btn-lg">Professor</button>
+           <form id="login-professor">
+            <div class="form-group text-left">
+              <label for="login">Login:</label>
+              <input type="login" class="form-control" id="login" placeholder="Login">
+            </div>
+            <div class="form-group text-left">
+              <label for="senha">Senha:</label>
+              <input type="password" class="form-control" id="senha" placeholder="Senha">
+            </div>
+            <p class="text-center">
+              <a href="professor/pagina-inicial-professor.html" class="btn btn-primary btn-lg active" role="button">Entrar</a>
+            </p>
+          </form>
+        </div>
+
+        <div class="col-lg-4 text-center">
+           <button type="button" onclick="habilitarCoordenador()" class="btn btn-primary btn-lg">Coordenador</button>
+           <form id="login-coordenador">
+            <div class="form-group text-left">
+              <label for="login">Login:</label>
+              <input type="login" class="form-control" id="login" placeholder="Login">
+            </div>
+            <div class="form-group text-left">
+              <label for="senha">Senha:</label>
+              <input type="password" class="form-control" id="senha" placeholder="Senha">
+            </div>
+            <p class="text-center">
+              <a href="coordenador/pagina-inicial-coordenador.html" class="btn btn-primary btn-lg active" role="button">Entrar</a>
+            </p>
+          </form>
+        </div>
+      </div>
+  </section>
+  <footer class="navbar navbar-inverse">
+    <p class="text-center">Sistema de Solicitação de Segunda Chamada</p>
+  </footer>
+</body>
+</html>

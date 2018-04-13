@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    .navbar.navbar-inverse {
+        border-radius: 0px !important;
+    }
+}
+
+.subTitulo{
+    padding-top: 2%;
+}
+
+button.btn.btn-primary.btn-lg {
+  padding: 5% 15%;
+}
+
+.login {
+  padding: 4%;
+  margin-bottom: 0%
+}
+
+form {
+	display: none;
+}
+
+.jumbotron{
+  margin-bottom: 0px !important;
+}
+
+footer p{
+  color: white;
+  padding: 1%;
+}
