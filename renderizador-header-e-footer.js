@@ -10,5 +10,4 @@ function renderizar(header, footer) {
 	document.body.innerHTML = header + pagina;
 	//para renderizar o footer;
 	document.body.innerHTML += footer;
-	console.log(__dirname);
 }
