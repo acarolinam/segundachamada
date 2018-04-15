@@ -1,23 +1,34 @@
+html,body{
+  margin: 0 !important;
+  height: 85%;
+}
+
+h2.display-3.text-center{
+  /*font-family: 'Pacifico', cursive;*/
+  color: #4166a3 !important;
+}
+
 @media (min-width: 768px) {
     .navbar.navbar-inverse {
         border-radius: 0px !important;
     }
 }
 
-.subTitulo{
-    padding-top: 2%;
+section{
+  min-height: 100% !important;
 }
 
-button.btn.btn-primary.btn-lg {
-  padding: 5% 15%;
+.subTitulo{
+    padding: 2% 2%;
+    margin: 0 !important;
 }
 
 .login {
-  padding: 4%;
-  margin-bottom: 0%
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-form {
+form.login-hidden {
 	display: none;
 }
 
@@ -28,4 +39,16 @@ form {
 footer p{
   color: white;
   padding: 1%;
+}
+
+footer.navbar.navbar-inverse{
+  margin: 0 !important;
+}
+
+.solic-aluno{
+  margin: 5%;
+}
+
+.botao-solic{
+  margin: 5% 35%;
 }

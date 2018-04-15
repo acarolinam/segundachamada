@@ -1,4 +1,4 @@
-var header = '<header class="header text-center"><div class="jumbotron"><div class="container"><h1 class="display-3 text-center">Sistema de Solicitação de Segunda Chamada</h1></div></div></header>';
+var header = '<header class="header text-center"><div class="jumbotron"><div class="container"><h2 class="display-3 text-center">Sistema de Solicitação de Segunda Chamada</h2></div></div></header>';
 var footer = '<footer class="navbar navbar-inverse"><p class="text-center">Sistema de Solicitação de Segunda Chamada</p></footer>';
 
 renderizar(header, footer);

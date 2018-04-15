@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type=text/javascript href="../bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <title>Sistema de Solicitação de Segunda Chamada</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">icon</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="pagina-inicial-aluno.html">Início</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Segundas Chamadas
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="cadastro-solicitacao.html">Nova solicitação de 2 chamada</a></li>
+            <li><a href="listagem-solicitacoes.html">Ver solicitações antigas de 2 chamadas</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <article class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h2 class="text-center solic-aluno">Solicitações Antigas de Segunda Chamada</h2>
+        <table class="table table-striped table-responsive">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Matéria</th>
+              <th>Professor</th>
+              <th>Data da Prova</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Estrutura de Dados II</td>
+              <td>Joelmir</td>
+              <td>12/03/2018</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Engenharia de Software</td>
+              <td>Raquel Santos</td>
+              <td>12/03/2018</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Engenharia de Software</td>
+              <td>Raquel Santos</td>
+              <td>02/04/2018</td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+      <div class="col-lg-2"></div>
+    </article>
+  </section>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+<script type="text/javascript" src="../renderizador-header-e-footer.js"></script>
+</html>
