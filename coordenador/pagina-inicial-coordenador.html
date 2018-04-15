@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/js/bootstrap.min.js">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <title>Sistema de Solicitação de Segunda Chamada</title>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">icon</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Opções do coordenador
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Detalhes de alunos</a></li>
+            <li><a href="#">Detalhes de turmas</a></li>
+            <li><a href="#">Detalhes de cursos</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="container-fluid">
+	  <div class="row subTitulo">
+			<p class="lead text-center">Gerencie as solicitações de novas chamadas ou visualize solicitações antigas</p>
+	  </div>
+		<div class="row gerenciarNovas">
+			<div class="col-lg-6 color text-center">
+			   <button type="button" onclick="verNovasSolicitacoes()" id="not" class="btn btn-primary btn-lg">Novas solicitações</button>				
+				<div class="color text-center">
+				</div>
+			</div>
+			<div class="col-lg-6 color text-center">
+			   <button type="button" onclick="verSolicitacoesAntigas()" class="btn btn-primary btn-lg">Solicitações Antigas</button>
+			</div>
+		</div>
+		<br/>
+    </section>
+</body>
+<script type="text/javascript" src="../renderizador-header-e-footer.js"></script>
+
+<script>
+var not = 1;
+if (not > 0) {document.getElementById('not').innerHTML += '<kbd class="kbd-danger"> ('+not+')</kbd>'}
+</script>
+
+</html>
