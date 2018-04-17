@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/js/bootstrap.min.js">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <title>Sistema de Solicitação de Segunda Chamada</title>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">icon</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Opções do coordenador
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Detalhes de alunos</a></li>
+            <li><a href="#">Detalhes de turmas</a></li>
+            <li><a href="#">Detalhes de cursos</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="container-fluid">
+	  <div class="row subTitulo">
+			<p class="lead text-center">Listagem de solicitações antigas</p>
+	  </div>
+		<table class="table">
+    <thead>
+      <tr>
+        <th>Sobrenome</th>
+        <th>Disciplina</th>
+        <th>Data da prova</th>
+        <th>Justificativa</th>
+        <th>Situação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bozo do BSI</td>
+        <td>Fundamentos do Bacharelado em SI</td>
+        <td>16/07/2014</td>
+        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
+        <td>
+			<p class="text-danger"><b>Rejeitada</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>Steve Jobs</td>
+        <td>Metodologia Científica</td>
+        <td>02/03/2012</td>
+        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
+        <td>
+			<p class="text-success"><b>Aceita</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>Pará Nascimento</td>
+        <td>Alemão Básico I</td>
+        <td>11/07/2011</td>
+        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
+        <td>
+			<p class="text-danger"><b>Rejeitada</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>Mann Von Träume</td>
+        <td>Técnicas de Comunicação</td>
+        <td>26/04/2017</td>
+        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
+        <td>
+			<p class="text-danger"><b>Rejeitada</b></p>
+        </td>
+      </tr>
+      <tr>
+        <td>Jim Fibonacci</td>
+        <td>Matemática Fundamental</td>
+        <td>04/05/2018</td>
+        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
+        <td>
+			<p class="text-success"><b>Aceita</b></p>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
+		<br/>
+    </section>
+</body>
+<script type="text/javascript" src="../renderizador-header-e-footer.js"></script>
+</html>

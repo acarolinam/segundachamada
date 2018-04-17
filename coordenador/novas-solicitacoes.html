@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/js/bootstrap.min.js">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <title>Sistema de Solicitação de Segunda Chamada</title>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">icon</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Opções do coordenador
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Detalhes de alunos</a></li>
+            <li><a href="#">Detalhes de turmas</a></li>
+            <li><a href="#">Detalhes de cursos</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="container-fluid">
+	  <div class="row subTitulo">
+			<p class="lead text-center">Listagem de novas solicitações</p>
+	  </div>
+		<table class="table">
+    <thead>
+      <tr>
+        <th>Sobrenome</th>
+        <th>Disciplina</th>
+        <th>Data da prova</th>
+        <th>Justificativa</th>
+        <th>Opções</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="tr1">
+        <td>José Lino de Souza Neto</td>
+        <td>Desenvolvimento Web IV</td>
+        <td>11/04/2018</td>
+        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
+        <td>
+			<button type="button" onclick="var x = document.getElementById('tr1'); x.style.transition = 'all .5s'; x.style.opacity = 0; x.style.height = '0%';" class="btn btn-success btn-lg">Aceitar</button>
+			<button type="button" onclick="prompt('Inserir motivo (opcional):'); var x = document.getElementById('tr1'); x.style.transition = 'all .5s'; x.style.opacity = 0; x.style.height = '0%';" class="btn btn-danger btn-lg">Rejeitar</button>
+        </td>
+      </tr>
+      <tr  id="tr2">
+        <td>Ruan Lucas Petschow da Silva</td>
+        <td>Matemática Discreta</td>
+        <td>05/01/2018</td>
+        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
+        <td>
+			<button type="button" onclick="var x = document.getElementById('tr2'); x.style.transition = 'all .5s'; x.style.opacity = 0; x.style.height = '0%';" class="btn btn-success btn-lg">Aceitar</button>
+			<button type="button" onclick="prompt('Inserir motivo (opcional):'); var x = document.getElementById('tr2'); x.style.transition = 'all .5s'; x.style.opacity = 0; x.style.height = '0%';" class="btn btn-danger btn-lg">Rejeitar</button>
+        </td>
+      </tr>
+      <tr id="tr3">
+        <td>Ana Carolina Matheus</td>
+        <td>Empreendedorismo</td>
+        <td>15/05/2016</td>
+        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
+        <td>
+			<button type="button" onclick="var x = document.getElementById('tr3'); x.style.transition = 'all .5s'; x.style.opacity = 0; x.style.height = '0%';" class="btn btn-success btn-lg">Aceitar</button>
+			<button type="button" onclick="prompt('Inserir motivo (opcional):'); var x = document.getElementById('tr3'); x.style.transition = 'all .5s'; x.style.opacity = 0; x.style.height = '0%';" class="btn btn-danger btn-lg">Rejeitar</button>
+        </td>
+      </tr>
+      <tr id="tr4">
+        <td>Bruno Wedderhoff Tissi</td>
+        <td>Inteligências Artificiais</td>
+        <td>10/09/2017</td>
+        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
+        <td>
+			<button type="button" onclick="var x = document.getElementById('tr4'); x.style.transition = 'all .5s'; x.style.opacity = 0; x.style.height = '0%';" class="btn btn-success btn-lg">Aceitar</button>
+			<button type="button" onclick="prompt('Inserir motivo (opcional):'); var x = document.getElementById('tr4'); x.style.transition = 'all .5s'; x.style.opacity = 0; x.style.height = '0%';" class="btn btn-danger btn-lg">Rejeitar</button>
+        </td>
+      </tr>
+      <tr id="tr5">
+        <td>Igor Ostroski de Souza</td>
+        <td>Estrutura de Dados V</td>
+        <td>02/11/2017</td>
+        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
+        <td>
+			<button type="button" onclick="var x = document.getElementById('tr5'); x.style.transition = 'all .5s'; x.style.opacity = 0; x.style.height = '0%';" class="btn btn-success btn-lg">Aceitar</button>
+			<button type="button" onclick="prompt('Inserir motivo (opcional):'); var x = document.getElementById('tr5'); x.style.transition = 'all .5s'; x.style.opacity = 0; x.style.height = '0%';" class="btn btn-danger btn-lg">Rejeitar</button>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
+		<br/>
+    </section>
+</body>
+<script type="text/javascript" src="../renderizador-header-e-footer.js"></script>
+</html>
