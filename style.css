@@ -1,23 +1,32 @@
+html,body{
+  margin: 0 !important;
+  height: 82%;
+}
+
+h2.display-3.text-center{
+  color: #4166a3 !important;
+}
+
 @media (min-width: 768px) {
     .navbar.navbar-inverse {
         border-radius: 0px !important;
     }
 }
 
+section{
+  min-height: 100% !important;
+}
+
 .subTitulo{
-    padding-top: 2%;
+    padding: 2% 2%;
+    margin: 0 !important;
 }
 
-button.btn.btn-primary.btn-lg {
-  padding: 5% 15%;
+.login{
+  height: 80% !important;
 }
 
-.login {
-  padding: 4%;
-  margin-bottom: 0%
-}
-
-form {
+form.login-hidden {
 	display: none;
 }
 
@@ -28,4 +37,24 @@ form {
 footer p{
   color: white;
   padding: 1%;
+}
+
+footer.navbar.navbar-inverse{
+  margin: 0 !important;
+}
+
+.solic-aluno{
+  margin: 4%;
+}
+
+.botao-solic{
+  margin: 5% 35%;
+}
+
+article.row{
+  margin:0; 
+}
+
+article.row.login{
+  min-height: 380px !important;
 }

@@ -10,27 +10,29 @@
 </head>
 
 <body>
-  
+
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">icon</a>
       </div>
       <ul class="nav navbar-nav">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Perfil</a></li>
+        <li><a href="pagina-inicial-coordenador.html">Início</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Opções do coordenador
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Detalhes de alunos</a></li>
+            <li><a href="novas-solicitacoes.html">Ver Novas Solicitações</a></li>
+            <li><a href="solicitacoes-antigas.html">Ver Solicitações Antigas</a></li>
+            <!-- <li><a href="#">Detalhes de alunos</a></li>
             <li><a href="#">Detalhes de turmas</a></li>
-            <li><a href="#">Detalhes de cursos</a></li>
+            <li><a href="#">Detalhes de cursos</a></li> -->
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
+        <li><a href="../index.html">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
       </ul>
     </div>
   </nav>
@@ -39,19 +41,23 @@
 			<p class="lead text-center">Gerencie as solicitações de novas chamadas ou visualize solicitações antigas</p>
 	  </div>
 		<div class="row gerenciarNovas">
-			<div class="col-lg-6 color text-center">
-			   <button type="button" onclick="verNovasSolicitacoes()" id="not" class="btn btn-primary btn-lg">Novas solicitações</button>				
+      <div class="col-lg-2 color text-center"></div>
+			<div class="col-lg-4 color text-center">
+         <a href="novas-solicitacoes.html" class="btn btn-primary btn-lg solic-aluno" role="button">Visualizar Novas Solicitações de Segunda Chamada (3)</a>
 				<div class="color text-center">
 				</div>
 			</div>
-			<div class="col-lg-6 color text-center">
-			   <button type="button" onclick="verSolicitacoesAntigas()" class="btn btn-primary btn-lg">Solicitações Antigas</button>
+			<div class="col-lg-4 color text-center">
+        <a href="solicitacoes-antigas.html" class="btn btn-primary btn-lg solic-aluno" role="button">Visualizar Solicitações Antigas de Segunda Chamada</a>
 			</div>
+      <div class="col-lg-2 color text-center"></div>
 		</div>
 		<br/>
     </section>
 </body>
 <script type="text/javascript" src="../renderizador-header-e-footer.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
 <script>
 var not = 1;

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type=text/javascript href="../bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <title>Sistema de Solicitação de Segunda Chamada</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">icon</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="pagina-inicial-professor.html">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
+        <li><a href="perfil.html">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Perfil</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Opções do Professor
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="cadastro-solicitacao.html">Nova solicitação de 2 chamada</a></li>
+            <li><a href="listagem-solicitacoes.html">Ver novas solicitações de 2 chamadas</a></li>
+            <li><a href="listagem-solicitacoes-antigas.html">Ver solicitações antigas de 2 chamadas</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../index.html">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <article class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h2 class="text-center solic-aluno">Formulário de Solicitação de Segunda Chamada</h2>
+        <form>
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="" class="form-control" id="" placeholder="Nome">
+          </div>
+          <div class="form-group">
+            <label for="">Número de Matrícula:</label>
+            <input type="" class="form-control" id="" placeholder="Número de Matrícula">
+          </div>
+          <div class="form-group">
+            <label for="">Professor (a):</label>
+            <select class="form-control" id="">
+              <option value="" selected disabled hidden>Escolha um Professor (a)</option>
+              <option>Marco André</option>
+              <option>Joelmir Lopes</option>
+              <option>Raquel Santos</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Matéria:</label>
+            <select class="form-control" id="">
+              <option value="" selected disabled hidden>Escolha uma Matéria</option>
+              <option>Estrutura de Dados II</option>
+              <option>Engenharia de Software I</option>
+              <option>Banco de Dados II</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Data da Prova:</label>
+            <input type="date" class="form-control" name="">
+            <!-- <input type="submit" class="form-control"> -->
+          </div>
+          <div class="form-group">
+            <label for="">Upload de Arquivo:</label>
+            <input type="file" name="userfile" accept="application/pdf">
+          </div>
+          <div class="form-group">
+            <label for="">Justificativa:</label>
+            <textarea class="form-control" rows="5" id="" placeholder="Justificativa"></textarea>
+          </div>
+          <div class="text-center">
+            <a href="listagem-solicitacoes.html" class="btn btn-success btn-group-justifie solic-aluno" role="button">Cadastrar</a>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-2"></div>
+    </article>
+  </section>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+<script type="text/javascript" src="../renderizador-header-e-footer.js"></script>
+</html>

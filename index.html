@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <script type=text/javascript href="bootstrap/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="script.js"></script>
-  <script>
-    document.getElementById("login-aluno").style.display = 'hidden';
-  </script>
+  <title>Sistema de solicitação de Segunda Chamada</title>
 </head>
 
 <body>
   <nav class="">
   </nav>
-  <section class="container-fluid">
+  <section class="">
       <div class="row subTitulo">
-        <p class="lead text-center">Entre com seu login para acessar o sistema e realizar solicitações de segunda chamada</p>
+        <h4 class="text-center">Entre com seu login para acessar o sistema e realizar solicitações de segunda chamada</h4>
       </div>
-      <div class="row login">
-        <div class="col-lg-4 color text-center">
-           <button type="button" onclick="habilitarAluno()" class="btn btn-primary btn-lg">Aluno</button>
-           <form id="login-aluno">
+      <div class="parte-estatica-login">
+      <article class="row login">
+        <div class="col-lg-3 color text-center"></div>
+        <div class="col-lg-2 color text-center">
+           <button type="button" onclick="habilitarAluno()" class="btn btn-primary btn-lg">Aluno</button><br/><br/><br/>
+           <form id="login-aluno" class="login-hidden">
             <div class="form-group text-left">
               <label for="login">Login:</label>
               <input type="login" class="form-control" id="login" placeholder="Login">
@@ -32,14 +33,14 @@
               <input type="password" class="form-control" id="senha" placeholder="Senha">
             </div>
             <p class="text-center">
-              <a href="aluno/pagina-inicial-aluno.html" class="btn btn-primary btn-lg active" role="button">Entrar</a>
+              <a href="aluno/pagina-inicial-aluno.html" class="btn btn-primary" role="button">Entrar</a>
             </p>
           </form>
         </div>
 
-        <div class="col-lg-4 text-center">
-           <button type="button" onclick="habilitarProfessor()" class="btn btn-primary btn-lg">Professor</button>
-           <form id="login-professor">
+        <div class="col-lg-2 text-center">
+           <button type="button" onclick="habilitarProfessor()" class="btn btn-primary btn-lg">Professor</button><br/><br/><br/>
+           <form id="login-professor" class="login-hidden">
             <div class="form-group text-left">
               <label for="login">Login:</label>
               <input type="login" class="form-control" id="login" placeholder="Login">
@@ -49,14 +50,14 @@
               <input type="password" class="form-control" id="senha" placeholder="Senha">
             </div>
             <p class="text-center">
-              <a href="professor/pagina-inicial-professor.html" class="btn btn-primary btn-lg active" role="button">Entrar</a>
+              <a href="professor/pagina-inicial-professor.html" class="btn btn-primary" role="button">Entrar</a>
             </p>
           </form>
         </div>
 
-        <div class="col-lg-4 text-center">
-           <button type="button" onclick="habilitarCoordenador()" class="btn btn-primary btn-lg">Coordenador</button>
-           <form id="login-coordenador">
+        <div class="col-lg-2 text-center">
+           <button type="button" onclick="habilitarCoordenador()" class="btn btn-primary btn-lg">Coordenador</button><br/><br/><br/>
+           <form id="login-coordenador" class="login-hidden">
             <div class="form-group text-left">
               <label for="login">Login:</label>
               <input type="login" class="form-control" id="login" placeholder="Login">
@@ -66,11 +67,27 @@
               <input type="password" class="form-control" id="senha" placeholder="Senha">
             </div>
             <p class="text-center">
-              <a href="coordenador/pagina-inicial-coordenador.html" class="btn btn-primary btn-lg active" role="button">Entrar</a>
+              <a href="coordenador/pagina-inicial-coordenador.html" class="btn btn-primary" role="button">Entrar</a>
             </p>
           </form>
         </div>
+        <div class="col-lg-3 color text-center"></div>
+      </article>
+    </div>
+    <article class="row botao-index">
+      <div class="col-lg-5 color text-center"></div>
+      <div class="col-lg-2 color text-center">
+        <a href="cadastro-usuario.html" class="btn btn-success solic-aluno" role="button">Cadastre-se</a>
       </div>
+      <div class="col-lg-5 color text-center"></div>
+    </article>
+    <article class="row">
+      <div class="col-lg-5 color text-center"></div>
+      <div class="col-lg-2 color text-center">
+        <a href="recuperar-senha.html" class="btn btn-danger solic-aluno" role="button">Recuperar Senha</a>
+      </div>
+      <div class="col-lg-5 color text-center"></div>
+    </article>
   </section>
 </body>
 <script type="text/javascript" src="renderizador-header-e-footer.js"></script>

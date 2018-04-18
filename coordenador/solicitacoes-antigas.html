@@ -10,95 +10,103 @@
 </head>
 
 <body>
-  
+
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">icon</a>
       </div>
       <ul class="nav navbar-nav">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Perfil</a></li>
+        <li><a href="pagina-inicial-coordenador.html">Início</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Opções do coordenador
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Detalhes de alunos</a></li>
-            <li><a href="#">Detalhes de turmas</a></li>
-            <li><a href="#">Detalhes de cursos</a></li>
+            <li><a href="novas-solicitacoes.html">Ver Novas Solicitações</a></li>
+            <li><a href="solicitacoes-antigas.html">Ver Solicitações Antigas</a></li>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
+        <li><a href="../index.html">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
       </ul>
     </div>
   </nav>
   <section class="container-fluid">
-	  <div class="row subTitulo">
-			<p class="lead text-center">Listagem de solicitações antigas</p>
-	  </div>
-		<table class="table">
-    <thead>
-      <tr>
-        <th>Sobrenome</th>
-        <th>Disciplina</th>
-        <th>Data da prova</th>
-        <th>Justificativa</th>
-        <th>Situação</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Bozo do BSI</td>
-        <td>Fundamentos do Bacharelado em SI</td>
-        <td>16/07/2014</td>
-        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
-        <td>
-			<p class="text-danger"><b>Rejeitada</b></p>
-        </td>
-      </tr>
-      <tr>
-        <td>Steve Jobs</td>
-        <td>Metodologia Científica</td>
-        <td>02/03/2012</td>
-        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
-        <td>
-			<p class="text-success"><b>Aceita</b></p>
-        </td>
-      </tr>
-      <tr>
-        <td>Pará Nascimento</td>
-        <td>Alemão Básico I</td>
-        <td>11/07/2011</td>
-        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
-        <td>
-			<p class="text-danger"><b>Rejeitada</b></p>
-        </td>
-      </tr>
-      <tr>
-        <td>Mann Von Träume</td>
-        <td>Técnicas de Comunicação</td>
-        <td>26/04/2017</td>
-        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
-        <td>
-			<p class="text-danger"><b>Rejeitada</b></p>
-        </td>
-      </tr>
-      <tr>
-        <td>Jim Fibonacci</td>
-        <td>Matemática Fundamental</td>
-        <td>04/05/2018</td>
-        <td><button type="button" onclick="" class="btn btn-info btn-lg">Ler justificativa</button></td>
-        <td>
-			<p class="text-success"><b>Aceita</b></p>
-        </td>
-      </tr>
-     
-    </tbody>
-  </table>
-		<br/>
-    </section>
+    <article class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10">
+        <h2 class="solic-aluno text-center">Listagem de solicitações antigas</h2>
+    		<table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Disciplina</th>
+            <th>Data da prova</th>
+            <th>Ação</th>
+            <th>Situação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bozo do BSI</td>
+            <td>Fundamentos do Bacharelado em SI</td>
+            <td>16/07/2014</td>
+            <td><button type="button" onclick="" class="btn btn-info">Ler justificativa</button></td>
+            <td>
+    			       <p class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                   <b>Rejeitada</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>Steve Jobs</td>
+            <td>Metodologia Científica</td>
+            <td>02/03/2012</td>
+            <td><button type="button" onclick="" class="btn btn-info">Ler justificativa</button></td>
+            <td>
+    			       <p class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                   <b>Aceita</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>Pará Nascimento</td>
+            <td>Alemão Básico I</td>
+            <td>11/07/2011</td>
+            <td><button type="button" onclick="" class="btn btn-info">Ler justificativa</button></td>
+            <td>
+    			       <p class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                   <b>Rejeitada</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>Mann Von Träume</td>
+            <td>Técnicas de Comunicação</td>
+            <td>26/04/2017</td>
+            <td><button type="button" onclick="" class="btn btn-info">Ler justificativa</button></td>
+            <td>
+    			       <p class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                 <b>Rejeitada</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>Jim Fibonacci</td>
+            <td>Matemática Fundamental</td>
+            <td>04/05/2018</td>
+            <td><button type="button" onclick="" class="btn btn-info">Ler justificativa</button></td>
+            <td>
+    			       <p class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                   <b>Aceita</b></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="col-lg-1"></div>
+    </aticle>
+  </section>
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../renderizador-header-e-footer.js"></script>
 </html>

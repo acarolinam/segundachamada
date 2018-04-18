@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type=text/javascript href="../bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <title>Sistema de Solicitação de Segunda Chamada</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">icon</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="pagina-inicial-professor.html">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
+        <li><a href="perfil.html">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Perfil</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Opções do Professor
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="cadastro-solicitacao.html">Nova solicitação de 2 chamada</a></li>
+            <li><a href="listagem-solicitacoes.html">Ver novas solicitações de 2 chamadas</a></li>
+            <li><a href="listagem-solicitacoes-antigas.html">Ver solicitações antigas de 2 chamadas</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../index.html">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <article class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h2 class="text-center solic-aluno">Visualizar Solicitação</h2>
+      </div>
+      <div class="col-lg-2"></div>
+    </article>
+    <article class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <table class="table table-bordered table-responsive">
+            <tbody>
+              <tr>
+                <th class="active text-right">Número de Matrícula</th>
+                <td>89225</td>
+              </tr>
+              <tr>
+                <th class="active text-right">Nome</th>
+                <td><a href="perfil-aluno.html">Fulano da Silva</a></td>
+              </tr>
+              <tr>
+                <th class="active text-right">E-mail</th>
+                <td>fulano@gmail.com</td>
+              </tr>
+              <tr>
+                <th class="active text-right">Curso</th>
+                <td>Bacharelado de Sistemas de Informação</td>
+              </tr>
+              <tr>
+                <th class="active text-right">Turno</th>
+                <td>Matutino</td>
+              </tr>
+              <tr>
+                <th class="active text-right">Matéria</th>
+                <td>Estrutura de Dados II</td>
+              </tr>
+              <tr>
+                <th class="active text-right">Arquivo enviado</th>
+                <td>atestado.pdf</td>
+              </tr>
+              <tr>
+                <th class="active text-right">Justificativa</th>
+                <td>Lorem ipsum. Forget this.</td>
+              </tr>
+              <tr>
+                <th class="active text-right">Data da Prova Perdida</th>
+                <td>12/03/2018</td>
+              </tr>
+          </tbody>
+          </table>
+        </div>
+        <div class="col-lg-3"></div>
+    </article>
+    <form class="row">
+      <div class="col-lg-5"></div>
+      <div class="col-lg-2">
+      <div class="form-group">
+        <label for="">Data da 2 Chamada:</label>
+        <input type="date" class="form-control" name="">
+      </div>
+      </div>
+      <div class="col-lg-5"></div>
+    </form>
+    <div class="row text-center">
+      <a href="listagem-solicitacoes.html" class="btn btn-success btn-group-justifie solic-aluno" type="submit" role="button">Confirmar </a>
+    </div>
+  </section>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../renderizador-header-e-footer.js"></script>
+</html>
